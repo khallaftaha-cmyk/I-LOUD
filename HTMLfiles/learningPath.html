@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-LOUD — Learning Path</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="/CSSfiles/learningPathCSS.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a class="brand" href="index.html">
+        <span class="nav-cloud">☁</span>
+        I-LOUD
+    </a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#" class="active">Learning Path</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-stars"></div>
+    <div class="hcl a"></div>
+    <div class="hcl b"></div>
+    <div class="hcl c"></div>
+    <div class="hero-body">
+        <p class="eyebrow">I-LOUD ROADMAP</p>
+        <h1 class="hero-h1">From Zero to<br><span class="grad">Cloud Master</span></h1>
+        <p class="hero-p">A structured journey through Cloud Computing & DevOps — curated by I-LOUD at INPT.</p>
+        <div class="stats">
+            <div class="stat"><span class="sn">6</span><span class="sl">Phases</span></div>
+            <div class="sdiv"></div>
+            <div class="stat"><span class="sn">24+</span><span class="sl">Topics</span></div>
+            <div class="sdiv"></div>
+            <div class="stat"><span class="sn">3</span><span class="sl">Certs</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="roadmap">
+<div class="roadmap-inner">
+
+    <!-- PHASE 1 — LEFT -->
+    <div class="phase left">
+        <div class="pcard-wrap">
+            <div class="pcard" onclick="toggle(this)">
+                <div class="ctop">
+                    <span class="pbadge">Phase 01</span>
+                    <span class="ctoggle">+</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&q=80" alt="Linux">
+                <div class="cbody">
+                    <h3>Linux & Networking Basics</h3>
+                    <p>Master the command line, TCP/IP fundamentals and navigate Linux like a pro.</p>
+                </div>
+                <div class="ctags">
+                    <span>Linux CLI</span><span>Bash Scripting</span><span>TCP/IP</span><span>DNS & HTTP</span><span>SSH</span>
+                </div>
+                <div class="cfoot">
+                    <span class="dur">⏱ 4 weeks</span>
+                    <span class="lvl green">Beginner</span>
+                </div>
+            </div>
+        </div>
+        <div class="pdot-col"><div class="pdot">🖥️</div></div>
+        <div class="pempty"></div>
+    </div>
+
+    <!-- PHASE 2 — RIGHT -->
+    <div class="phase right">
+        <div class="pcard-wrap">
+            <div class="pcard" onclick="toggle(this)">
+                <div class="ctop">
+                    <span class="pbadge">Phase 02</span>
+                    <span class="ctoggle">+</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?w=500&q=80" alt="Docker">
+                <div class="cbody">
+                    <h3>Docker & Containerization</h3>
+                    <p>Package apps into portable containers. From Dockerfiles to multi-container orchestration.</p>
+                </div>
+                <div class="ctags">
+                    <span>Docker Images</span><span>Dockerfile</span><span>Docker Compose</span><span>Volumes</span><span>Registry</span>
+                </div>
+                <div class="cfoot">
+                    <span class="dur">⏱ 3 weeks</span>
+                    <span class="lvl green">Beginner</span>
+                </div>
+            </div>
+        </div>
+        <div class="pdot-col"><div class="pdot">🐳</div></div>
+        <div class="pempty"></div>
+    </div>
+
+    <!-- PHASE 3 — LEFT -->
+    <div class="phase left">
+        <div class="pcard-wrap">
+            <div class="pcard" onclick="toggle(this)">
+                <div class="ctop">
+                    <span class="pbadge">Phase 03</span>
+                    <span class="ctoggle">+</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80" alt="Cloud">
+                <div class="cbody">
+                    <h3>Cloud Platforms — AWS / Azure / GCP</h3>
+                    <p>Deploy infrastructure, manage storage and compute on the big three cloud providers.</p>
+                </div>
+                <div class="ctags">
+                    <span>AWS EC2 & S3</span><span>IAM</span><span>Azure VMs</span><span>GCP Compute</span><span>Cloud Networking</span>
+                </div>
+                <div class="ccert">🏅 AWS Cloud Practitioner</div>
+                <div class="cfoot">
+                    <span class="dur">⏱ 6 weeks</span>
+                    <span class="lvl orange">Intermediate</span>
+                </div>
+            </div>
+        </div>
+        <div class="pdot-col"><div class="pdot">☁️</div></div>
+        <div class="pempty"></div>
+    </div>
+
+    <!-- PHASE 4 — RIGHT -->
+    <div class="phase right">
+        <div class="pcard-wrap">
+            <div class="pcard" onclick="toggle(this)">
+                <div class="ctop">
+                    <span class="pbadge">Phase 04</span>
+                    <span class="ctoggle">+</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=500&q=80" alt="DevOps">
+                <div class="cbody">
+                    <h3>DevOps & CI/CD Pipelines</h3>
+                    <p>Automate everything. Build pipelines that ship code faster and more reliably.</p>
+                </div>
+                <div class="ctags">
+                    <span>Git & GitHub</span><span>GitHub Actions</span><span>Jenkins</span><span>GitLab CI</span><span>Automated Testing</span>
+                </div>
+                <div class="cfoot">
+                    <span class="dur">⏱ 5 weeks</span>
+                    <span class="lvl orange">Intermediate</span>
+                </div>
+            </div>
+        </div>
+        <div class="pdot-col"><div class="pdot">⚙️</div></div>
+        <div class="pempty"></div>
+    </div>
+
+    <!-- PHASE 5 — LEFT -->
+    <div class="phase left">
+        <div class="pcard-wrap">
+            <div class="pcard" onclick="toggle(this)">
+                <div class="ctop">
+                    <span class="pbadge">Phase 05</span>
+                    <span class="ctoggle">+</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&q=80" alt="Kubernetes">
+                <div class="cbody">
+                    <h3>Kubernetes & Orchestration</h3>
+                    <p>Orchestrate containers at scale — the engine behind modern cloud-native applications.</p>
+                </div>
+                <div class="ctags">
+                    <span>Pods & Nodes</span><span>Deployments</span><span>Ingress</span><span>Helm</span><span>Auto-scaling</span><span>EKS/AKS/GKE</span>
+                </div>
+                <div class="ccert">🏅 Certified Kubernetes Administrator</div>
+                <div class="cfoot">
+                    <span class="dur">⏱ 6 weeks</span>
+                    <span class="lvl blue">Advanced</span>
+                </div>
+            </div>
+        </div>
+        <div class="pdot-col"><div class="pdot">🚢</div></div>
+        <div class="pempty"></div>
+    </div>
+
+    <!-- PHASE 6 — RIGHT -->
+    <div class="phase right">
+        <div class="pcard-wrap">
+            <div class="pcard" onclick="toggle(this)">
+                <div class="ctop">
+                    <span class="pbadge">Phase 06</span>
+                    <span class="ctoggle">+</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80" alt="IaC">
+                <div class="cbody">
+                    <h3>Infrastructure as Code & SRE</h3>
+                    <p>Define infra in code with Terraform & Ansible. Embrace the SRE mindset.</p>
+                </div>
+                <div class="ctags">
+                    <span>Terraform</span><span>Ansible</span><span>Pulumi</span><span>Prometheus</span><span>Grafana</span><span>SLO/SLA</span>
+                </div>
+                <div class="ccert">🏅 HashiCorp Terraform Associate</div>
+                <div class="cfoot">
+                    <span class="dur">⏱ 6 weeks</span>
+                    <span class="lvl blue">Advanced</span>
+                </div>
+            </div>
+        </div>
+        <div class="pdot-col"><div class="pdot">🏗️</div></div>
+        <div class="pempty"></div>
+    </div>
+
+    <!-- FINISH -->
+    <div class="finish">
+        <div class="fpulse"></div>
+        <div class="fcircle">🚀</div>
+        <p class="ftitle">Cloud Master</p>
+        <p class="fsub">You've reached the stratosphere.</p>
+    </div>
+
+</div>
+</section>
+
+<footer>© 2026 I-LOUD — INPT Cloud Computing Club</footer>
+
+<script src="/JSfiles/learningPathJS.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-LOUD</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/CSSfiles/indexCSS.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="nav-cloud">☁</span>
+                I-LOUD Cloud Computing Club
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/HTMLfiles/learningPath.html">Learning Path</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#i-loudians">I-Loudians</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HOME ================= -->
+    <section id="home">
+
+        <!-- Animated background clouds -->
+        <div class="clouds-container">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+            <div class="cloud cloud-5"></div>
+            <div class="cloud cloud-6"></div>
+        </div>
+
+        <div class="container">
+            <h1 class="home-title">I-loud: Where INPT reaches the Stratosphere.</h1>
+            <div class="about-us">
+                <div class="logo">
+                    <img src="/Assets/I-LOUD.jpg" alt="I-LOUD Logo">
+                </div>
+                <div class="introduction">
+                    <h2>About us:</h2>
+                    <p>I-LOUD est bien plus qu'un club ;
+                    c'est un incubateur de talents spécialisé dans l'architecture Cloud et la culture DevOps.
+                    Nous comblons le fossé entre la formation d'ingénieur à l'INPT et les exigences de l'industrie (AWS, Azure, GCP).
+                    De la virtualisation à l'orchestration de conteneurs, nous propulsons nos membres vers des certifications de haut niveau
+                    et des projets complexes, car chez I-LOUD, nous croyons que l'ingénierie n'a de limite que le ciel.
+                    </p>
+                </div>
+            </div>
+            <a href="joinUs.html" class="btn btn-primary btn-lg mt-3">Join us</a>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+
+            <div class="projects-header">
+                <p class="projects-eyebrow">BUILT BY I-LOUD</p>
+                <h2 class="projects-title">Our <span class="projects-title-accent">Projects</span></h2>
+                <p class="projects-sub">Real-world cloud and DevOps projects engineered by I-LOUD members — from APIs to intelligent IoT platforms.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 — Cloud Notes API -->
+                <div class="proj-card cyan">
+                    <div class="proj-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&q=80" alt="Cloud Notes API">
+                        <div class="proj-img-overlay"></div>
+                        <span class="proj-status active">Active</span>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title-row">
+                            <div class="proj-icon">📝</div>
+                            <h3 class="proj-name">Cloud Notes API</h3>
+                        </div>
+                        <p class="proj-desc">A fully cloud-native RESTful API for creating, organizing and syncing notes across devices. Built with a microservices architecture and deployed on AWS with auto-scaling and high availability in mind.</p>
+                        <div class="proj-features">
+                            <span class="proj-feature">JWT authentication with refresh token rotation and role-based access control</span>
+                            <span class="proj-feature">Real-time sync via WebSockets — changes reflect instantly across all connected clients</span>
+                            <span class="proj-feature">Full-text search powered by Elasticsearch with tag and category filtering</span>
+                            <span class="proj-feature">Deployed on AWS ECS with RDS PostgreSQL and S3 for attachment storage</span>
+                        </div>
+                        <div class="proj-stack">
+                            <span>Node.js</span><span>PostgreSQL</span><span>Redis</span><span>AWS ECS</span><span>S3</span><span>Docker</span>
+                        </div>
+                        <div class="proj-footer">
+                            <a href="#" class="proj-link">View Project →</a>
+                            <span class="proj-members">👥 4 members</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 — Post Management API -->
+                <div class="proj-card violet">
+                    <div class="proj-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600&q=80" alt="Post Management API">
+                        <div class="proj-img-overlay"></div>
+                        <span class="proj-status beta">Beta</span>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title-row">
+                            <div class="proj-icon">📡</div>
+                            <h3 class="proj-name">Post Management API</h3>
+                        </div>
+                        <p class="proj-desc">A scalable content management API designed for multi-platform publishing. Handles post lifecycle — drafting, scheduling, publishing and archiving — with a powerful webhook system for third-party integrations.</p>
+                        <div class="proj-features">
+                            <span class="proj-feature">Multi-tenant architecture supporting isolated workspaces per organization</span>
+                            <span class="proj-feature">Scheduled publishing with a cron-based job queue using Bull and Redis</span>
+                            <span class="proj-feature">Webhook engine that notifies external services on every post state change</span>
+                            <span class="proj-feature">CI/CD pipeline with GitHub Actions deploying to Azure Container Apps</span>
+                        </div>
+                        <div class="proj-stack">
+                            <span>FastAPI</span><span>MongoDB</span><span>Redis</span><span>Azure</span><span>GitHub Actions</span>
+                        </div>
+                        <div class="proj-footer">
+                            <a href="#" class="proj-link">View Project →</a>
+                            <span class="proj-members">👥 3 members</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 — Cloud IoT Digital Twin -->
+                <div class="proj-card teal">
+                    <div class="proj-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="IoT Digital Twin">
+                        <div class="proj-img-overlay"></div>
+                        <span class="proj-status research">Research</span>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title-row">
+                            <div class="proj-icon">🌐</div>
+                            <h3 class="proj-name">Cloud-IoT Monitor & Digital Twin API</h3>
+                        </div>
+                        <p class="proj-desc">An advanced IoT monitoring platform that creates live digital twins of physical devices on the cloud. Sensor telemetry streams in real-time, enabling predictive analytics, anomaly detection and remote control of connected hardware.</p>
+                        <div class="proj-features">
+                            <span class="proj-feature">Digital twin engine mirrors physical device state with sub-second latency via MQTT</span>
+                            <span class="proj-feature">Time-series telemetry stored in InfluxDB with Grafana dashboards for visualization</span>
+                            <span class="proj-feature">ML-based anomaly detection alerts operators before hardware failures occur</span>
+                            <span class="proj-feature">Deployed on GCP with Pub/Sub for event-driven device communication at scale</span>
+                        </div>
+                        <div class="proj-stack">
+                            <span>Python</span><span>MQTT</span><span>InfluxDB</span><span>GCP</span><span>Grafana</span><span>Kubernetes</span>
+                        </div>
+                        <div class="proj-footer">
+                            <a href="#" class="proj-link">View Project →</a>
+                            <span class="proj-members">👥 5 members</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EVENTS ================= -->
+    <section id="events" class="events-section">
+        <div class="container">
+
+            <div class="events-header">
+                <p class="events-eyebrow">WHAT'S HAPPENING</p>
+                <h2 class="events-title">Club <span class="events-title-accent">Events</span></h2>
+                <p class="events-sub">Workshops, conferences and hands-on sessions organized by I-LOUD to push your cloud skills further.</p>
+            </div>
+
+            <div class="events-grid">
+
+                <!-- EVENT 1 — UPCOMING FEATURED -->
+                <div class="event-card featured">
+                    <div class="event-ribbon">Upcoming</div>
+                    <div class="event-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="AWS Workshop">
+                        <div class="event-img-overlay"></div>
+                        <span class="event-type workshop">Workshop</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date-row">
+                            <div class="event-date-box">
+                                <span class="eday">14</span>
+                                <span class="emon">MAR</span>
+                            </div>
+                            <div class="event-meta">
+                                <span class="emeta-item">🕐 10:00 – 17:00</span>
+                                <span class="emeta-item">📍 INPT Amphithéâtre B</span>
+                            </div>
+                        </div>
+                        <h3 class="event-name">AWS Cloud Foundations Workshop</h3>
+                        <p class="event-desc">A full-day hands-on workshop diving into AWS core services — EC2, S3, IAM, and VPC. Perfect for students starting their cloud journey. Laptop required.</p>
+                        <div class="event-tags">
+                            <span>AWS</span><span>EC2</span><span>S3</span><span>Hands-on</span>
+                        </div>
+                        <button class="event-btn primary-btn">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- EVENT 2 -->
+                <div class="event-card">
+                    <div class="event-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=80" alt="DevOps Conference">
+                        <div class="event-img-overlay"></div>
+                        <span class="event-type conference">Conference</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date-row">
+                            <div class="event-date-box">
+                                <span class="eday">28</span>
+                                <span class="emon">MAR</span>
+                            </div>
+                            <div class="event-meta">
+                                <span class="emeta-item">🕐 14:00 – 18:00</span>
+                                <span class="emeta-item">📍 Salle des Conférences</span>
+                            </div>
+                        </div>
+                        <h3 class="event-name">DevOps in Production: Real Stories</h3>
+                        <p class="event-desc">Industry engineers share how they build and maintain CI/CD pipelines at scale. Q&A session included.</p>
+                        <div class="event-tags">
+                            <span>DevOps</span><span>CI/CD</span><span>Talks</span>
+                        </div>
+                        <button class="event-btn secondary-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- EVENT 3 -->
+                <div class="event-card">
+                    <div class="event-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80" alt="Kubernetes Bootcamp">
+                        <div class="event-img-overlay"></div>
+                        <span class="event-type bootcamp">Bootcamp</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date-row">
+                            <div class="event-date-box">
+                                <span class="eday">05</span>
+                                <span class="emon">APR</span>
+                            </div>
+                            <div class="event-meta">
+                                <span class="emeta-item">🕐 09:00 – 13:00</span>
+                                <span class="emeta-item">📍 Lab Informatique 3</span>
+                            </div>
+                        </div>
+                        <h3 class="event-name">Kubernetes Crash Bootcamp</h3>
+                        <p class="event-desc">From zero to deploying your first cluster in 4 hours. Pods, services, deployments and Helm — all on a live cluster.</p>
+                        <div class="event-tags">
+                            <span>Kubernetes</span><span>Helm</span><span>Cluster</span>
+                        </div>
+                        <button class="event-btn secondary-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- EVENT 4 — PAST -->
+                <div class="event-card past-event">
+                    <div class="event-ribbon past">Past</div>
+                    <div class="event-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80" alt="Cloud Security">
+                        <div class="event-img-overlay"></div>
+                        <span class="event-type talk">Talk</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date-row">
+                            <div class="event-date-box past-box">
+                                <span class="eday">18</span>
+                                <span class="emon">FEB</span>
+                            </div>
+                            <div class="event-meta">
+                                <span class="emeta-item">🕐 15:00 – 17:00</span>
+                                <span class="emeta-item">📍 INPT Amphi A</span>
+                            </div>
+                        </div>
+                        <h3 class="event-name">Cloud Security: Zero Trust Architecture</h3>
+                        <p class="event-desc">An eye-opening talk on securing cloud infrastructure using Zero Trust principles — identity, micro-segmentation and continuous verification.</p>
+                        <div class="event-tags">
+                            <span>Security</span><span>Zero Trust</span><span>IAM</span>
+                        </div>
+                        <button class="event-btn ghost-btn">View Recap</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-grid">
+
+                <!-- BRAND -->
+                <div class="footer-brand-col">
+                    <div class="footer-logo">
+                        <span class="footer-logo-icon">☁</span>
+                        <span class="footer-logo-text">I-LOUD</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Incubateur de talents Cloud & DevOps à l'INPT. Nous propulsons nos membres vers les certifications et projets de l'industrie — car l'ingénierie n'a de limite que le ciel.
+                    </p>
+                    <div class="footer-socials">
+                        <a class="social-btn" href="#" title="LinkedIn">in</a>
+                        <a class="social-btn" href="#" title="GitHub">⌥</a>
+                        <a class="social-btn" href="#" title="Instagram">◈</a>
+                        <a class="social-btn" href="#" title="Discord">◉</a>
+                    </div>
+                </div>
+
+                <!-- NAVIGATION -->
+                <div>
+                    <p class="footer-col-title">Navigation</p>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="/HTMLfiles/learningPath.html">Learning Path</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#i-loudians">I-Loudians</a></li>
+                        <li><a href="joinUs.html">Join Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div>
+                    <p class="footer-col-title">Contact</p>
+                    <div class="footer-contact-list">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+212697307024" class="contact-value">+212 697 307 024</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:khallaftaha759@gmail.com" class="contact-value">khallaftaha759@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">INPT, Rabat, Morocco</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM BAR -->
+            <div class="footer-bottom">
+                <p class="rights">© 2026 I-LOUD — INPT Cloud Computing Club. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Code of Conduct</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/JSFiles/indexJS.js"></script>
+</body>
+</html>
