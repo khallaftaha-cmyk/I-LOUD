@@ -1359,3 +1359,238 @@ section h2:not(.home-title)::after {
         text-align: center;
     }
 }
+
+
+/* =============================================
+   JQUERY FEATURES CSS
+   ============================================= */
+
+/* 1. Scroll Progress Bar */
+#scroll-progress {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, #2979c8, #4fc3f7, #00bcd4);
+    box-shadow: 0 0 10px rgba(79,195,247,0.7);
+    z-index: 9999;
+    transition: width 0.1s linear;
+    border-radius: 0 2px 2px 0;
+}
+
+/* 2. Navbar scrolled state */
+.navbar-scrolled {
+    background: linear-gradient(180deg, #0a1e3a 0%, #060f1e 100%) !important;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.8), 0 0 20px rgba(79,195,247,0.1) !important;
+    border-bottom-color: rgba(79,195,247,0.4) !important;
+}
+
+/* 3. Back to Top Button */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 36px;
+    right: 32px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1e3f6e, #2979c8);
+    border: 1px solid rgba(79,195,247,0.4);
+    color: #4fc3f7;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(41,121,200,0.4), 0 0 0 0 rgba(79,195,247,0.3);
+    z-index: 1000;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#back-to-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 26px rgba(79,195,247,0.5);
+}
+
+/* 4. Hero Badge */
+#hero-badge {
+    display: inline-block;
+    font-family: 'Orbitron', monospace;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    background: rgba(79,195,247,0.12);
+    border: 1px solid rgba(79,195,247,0.4);
+    border-radius: 20px;
+    color: #4fc3f7;
+    vertical-align: middle;
+    margin-left: 10px;
+    box-shadow: 0 0 12px rgba(79,195,247,0.25);
+    -webkit-text-fill-color: #4fc3f7;
+}
+
+/* 6. Section fade-in */
+.section-hidden {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.section-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* 8. Enlarged card on double-click */
+.enlarged {
+    transform: scale(1.04) !important;
+    border-color: rgba(79,195,247,0.6) !important;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(79,195,247,0.25) !important;
+    z-index: 10;
+    position: relative;
+}
+
+/* 9. Tooltip */
+#jq-tooltip {
+    display: none;
+    position: absolute;
+    background: rgba(10,22,44,0.95);
+    border: 1px solid rgba(79,195,247,0.3);
+    color: #b0bec5;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.76rem;
+    letter-spacing: 0.5px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    pointer-events: none;
+    z-index: 9998;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+    white-space: nowrap;
+}
+
+/* 10. Announcement Banner */
+#announce-banner {
+    width: 100%;
+    background: linear-gradient(90deg, #0d2340, #1e3f6e, #0d2340);
+    border-bottom: 1px solid rgba(79,195,247,0.3);
+    color: #b3e5fc;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 10px 50px;
+    position: relative;
+    z-index: 998;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+}
+#close-banner {
+    position: absolute;
+    right: 16px; top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #4fc3f7;
+    font-size: 0.9rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+#close-banner:hover { opacity: 1; }
+
+/* 12. Dark atmosphere mode */
+.dark-atmosphere {
+    filter: brightness(0.75) saturate(0.6);
+    transition: filter 0.5s ease;
+}
+
+/* Toast notification */
+#jq-toast {
+    display: none;
+    position: fixed;
+    bottom: 96px;
+    right: 32px;
+    background: rgba(10,22,44,0.96);
+    border: 1px solid rgba(79,195,247,0.3);
+    color: #b3e5fc;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 9997;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+    max-width: 260px;
+}
+
+/* 13. Modal */
+#jq-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(5,12,28,0.85);
+    backdrop-filter: blur(6px);
+    z-index: 9990;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#jq-modal {
+    position: relative;
+    background: linear-gradient(160deg, #0f2748 0%, #081628 100%);
+    border: 1px solid rgba(79,195,247,0.3);
+    border-radius: 20px;
+    padding: 44px 40px;
+    max-width: 440px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 60px rgba(41,121,200,0.15);
+}
+#jq-modal-close {
+    position: absolute;
+    top: 16px; right: 18px;
+    background: none;
+    border: none;
+    color: #546e7a;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+#jq-modal-close:hover { color: #4fc3f7; }
+.modal-eyebrow {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 5px;
+    color: #4fc3f7;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.modal-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #f0f6ff;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+.modal-body {
+    font-size: 0.88rem;
+    color: #78909c;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+.modal-cta {
+    display: inline-block;
+    font-family: 'Orbitron', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 13px 32px;
+    background: linear-gradient(135deg, #1e5fa8, #2979c8);
+    color: #f0f6ff;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(41,121,200,0.4);
+    transition: all 0.3s;
+}
+.modal-cta:hover {
+    background: linear-gradient(135deg, #2979c8, #4fc3f7);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(79,195,247,0.4);
+    color: #fff;
+}
